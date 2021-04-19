@@ -1,0 +1,33 @@
+.detail__items {
+  display: flex;
+}
+.detail h3 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.detail img {
+  width: 100%;
+}
+.detail__image {
+  width: 40%;
+}
+.detail__image > div {
+  display: flex;
+  color: var(--secondary-color);
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.detail__image i {
+  padding-right: 0.5rem;
+}
+.detail p {
+  width: 60%;
+  padding-left: 2rem;
+  line-height: 1.8;
+  font-weight: bold;
+  color: var(--secondary-color);
+}

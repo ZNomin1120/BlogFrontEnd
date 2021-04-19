@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogSite || Login</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+      integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form id="login-form" class="login__form">
+        <div class="login__logo">Blogsite.net</div>
+        <div class="login__input">
+          <i class="fas fa-user"></i>
+          <input id="username" type="text" placeholder="Нэвтрэх нэр" />
+        </div>
+        <div class="login__input">
+          <i class="fas fa-unlock-alt"></i>
+          <input id="password" type="password" placeholder="Нууц үг" />
+        </div>
+        <div id="login-button" class="login__button">Нэвтрэх</div>
+        <a href="register.html" class="login__button login__register"
+          >Бүртгүүлэх</a
+        >
+      </form>
+      <div id="error" class="error error-close">
+        <div>
+          <i class="far fa-times-circle"></i>
+        </div>
+        <div>
+          <p>Алдаа</p>
+          <p>Нэвтрэх нэр болон нууц үгээ зөв оруулна уу?</p>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/admin.js"></script>
+  </body>
+</html>

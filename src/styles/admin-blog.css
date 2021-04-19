@@ -1,0 +1,88 @@
+.blogs-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(243, 243, 243);
+  border: 1px solid rgb(200, 200, 200);
+}
+.blogs-table .table {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 2fr 2fr;
+  border-top: 1px solid rgb(200, 200, 200);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.blogs-table img {
+  width: 100%;
+}
+.blogs-table .table > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blogs-table .table .update {
+  font-size: 0.8rem;
+  color: var(--background-color);
+  background: rgb(36, 162, 235);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.blogs-table .table .delete {
+  font-size: 0.8rem;
+  color: var(--background-color);
+  background: rgb(230, 32, 49);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.blogs-table .table .photo {
+  font-size: 0.8rem;
+  color: var(--background-color);
+  background: rgb(233, 182, 44);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.blogs-table .table:first-child {
+  border-top: none;
+}
+.blogs-table .table p {
+  border-right: 1px solid rgb(200, 200, 200);
+  padding: 0.5rem 0.8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blogs-table .table p:last-child {
+  border-right: none;
+}
+.blogs-table .header {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  height: auto;
+}
+
+.blogs-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.blogs-content p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+.blogs-content a {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10rem;
+}

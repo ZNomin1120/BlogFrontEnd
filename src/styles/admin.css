@@ -1,0 +1,41 @@
+.admin-navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: var(--secondary-color);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.admin-navbar a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-left: 0.2rem;
+}
+.admin-navbar i {
+  color: var(--background-color);
+  font-size: 1.2rem;
+}
+.admin-navbar .item {
+  padding: 1rem 4rem 1rem 1.5rem;
+}
+.admin-navbar .item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.admin-navbar .logout {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.admin-container form p {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.1);
+}

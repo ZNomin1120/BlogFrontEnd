@@ -1,0 +1,21 @@
+.about {
+  padding: 2rem 0;
+}
+.about__content {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.about img {
+  border-radius: 50%;
+  width: 8%;
+  margin-left: 3rem;
+}
+.about p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.about__item {
+  margin-left: 2.5rem;
+}

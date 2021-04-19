@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+      integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@3.0.2/dist/umd/index.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/showcase.css" />
+    <link rel="stylesheet" href="./styles/section.css" />
+    <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <style>
+      footer {
+        background: var(--exDark);
+        color: rgb(43, 43, 43);
+        text-align: center;
+        padding: 2rem 0;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      .social-links a {
+        border: 2px solid rgb(207, 207, 207);
+        color: rgb(43, 43, 43);
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+        margin: 0 0.3rem;
+        transition: all 0.5s ease;
+      }
+
+      .social-links a:hover {
+        background: rgb(37, 37, 37);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">Blogsite<span>.com</span></div>
+        <div class="header__login">
+          <i class="fas fa-user"></i>
+          <a href="login.html">Нэвтрэх</a>
+        </div>
+      </header>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__items">
+          <div id="navbar-home">
+            <i class="fas fa-home"></i>
+            <a href="index.html">Нүүр хуудас</a>
+          </div>
+          <div id="navbar-blog">
+            <i class="fas fa-file-alt"></i>
+            <a href="blog.html">Блогууд</a>
+          </div>
+          <div id="navbar-about">
+            <i class="far fa-address-card"></i>
+            <a href="about.html">Бидний тухай</a>
+          </div>
+        </div>
+        <div class="navbar__search">
+          <input type="text" id="search-input" placeholder="Хайх" />
+          <i id="search-button" class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div id="content">
+      <section class="section">
+        <div class="container">
+          <p>Бүх блогууд</p>
+          <div class="section__items blog-js"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__logo">Blogsite.com</div>
+        <p>Сүүлийн үеийн шинэлэг, шинэ мэдээ мэдээллийг blogsite.net-ээс</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

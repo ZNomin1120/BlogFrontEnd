@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
+      integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <link rel="stylesheet" href="./styles/blog-edit.css" />
+
+    <title>Admin</title>
+  </head>
+  <body>
+    <nav class="admin-navbar">
+      <div>
+        <div id="blogs" class="item">
+          <i class="fas fa-file-alt"></i>
+          <a href="admin.html">Блогууд</a>
+        </div>
+        <div id="users" class="item">
+          <i class="fas fa-user"></i>
+          <a href="admin-user.html">Хэрэглэгчид</a>
+        </div>
+      </div>
+      <div class="logout item">
+        <i class="fas fa-user"></i>
+        <a id="logout" href="/">Гарах</a>
+      </div>
+    </nav>
+    <div id="content">
+      <div class="admin-container">
+        <div class="edit">
+          <div class="edit__image">
+            <p>Одоо байгаа зураг:</p>
+            <img src="http://localhost:8000/api/v1/blog/photo/blog_2.jpg" />
+            <p>Зураг солих:</p>
+            <input type="file" />
+          </div>
+          <div class="edit__items">
+            <p>Блогны гарчиг:</p>
+            <input
+              type="text"
+              value="ЭМЯ: Зургаан хүн нас барж, 1107 хүнээс Covid-19 илэрлээ"
+            />
+            <p>Блог:</p>
+            <textarea>
+                ЭМЯ-ны хэвлэлийн ажилтан Б.УУГАНБАЯР: Монгол Улсад сүүлийн 24 цагт 11883 хүнд шинжилгээ хийхэд Covid-19-ийн 1107 шинэ тохиолдол бүртгэгджээ. Халдварын нийт тохиолдол 19672 болсон байна. Covid-19 халдварын улмаас зургаан хүн нас баржээ. Ингээд Covid-19-ийн шалтгаант нийт нас баралт 37 боллоо. Тодруулбал, 34 настай эрэгтэй дөрөвдүгээр сарын 13-нд онош нь батлагдсан бол 49 настай эрэгтэй дөрөвдүгээр сарын 6-нд онош нь батлагдаж, Цэргийн төв эмнэлэгт хэвтэн эмчлүүлж байгаад нэн хүнд хэлбэрээр нас барлаа. Мөн 76 настай эмэгтэй онош нь энэ сарын 7-нд батлагдаж, ХӨСҮТ-д эмчлүүлж байсан бол 64 настай эмэгтэй энэ сарын 12-нд батлагдаж, мөн ХӨСҮТ-д эмчлүүлж байсан. Халдварын улмаас нас барсан 58 настай эрэгтэйгийн хувьд гуравдугаар сарын 15-нд батлагдаж, ХӨСҮТ-д эмчлүүлж байсан бол 62 настай эрэгтэй дөрөвдүгээр сарын 12-нд онош батлагдаж, Сүхбаатар аймгийн Нэгдсэн эмнэлэгт эмчлүүлж байгаад нэн хүнд хэлбэрээр нас барсан байна.
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/admin.js"></script>
+  </body>
+</html>

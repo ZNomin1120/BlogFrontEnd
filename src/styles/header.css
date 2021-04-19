@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.header__login a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.header__login i {
+    color: var(--main-color);
+}
+.header__logo{
+    color: var(--main-color);
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.header__logo span {
+    font-size: 1rem;
+}

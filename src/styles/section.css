@@ -1,0 +1,35 @@
+.section {
+  margin: 3rem 0;
+}
+.section .container > p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.section__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 2rem;
+}
+.section img {
+  width: 100%;
+  height: 200px;
+}
+.section p {
+  font-weight: bold;
+}
+.section h6 {
+  margin-bottom: 1rem;
+}
+.section a {
+  text-decoration: none;
+  color: var(--background-color);
+  background: var(--secondary-color);
+  padding: 0.5rem 1.2rem;
+  transition: all 0.2s ease-in;
+}
+.section a:hover {
+  background: var(--secondary-dark);
+}

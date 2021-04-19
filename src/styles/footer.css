@@ -1,0 +1,9 @@
+.footer{
+    margin: 2rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--secondary-color);
+    text-align: center;
+}
+.footer__logo{
+    font-size: 1.5rem;
+}

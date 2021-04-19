@@ -1,0 +1,62 @@
+.edit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.edit p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  color: var(--secondary-color);
+}
+.edit__items {
+  width: 70%;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.edit__items input {
+  width: 90%;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.edit__items input:focus {
+  outline: none;
+}
+.edit__items textarea {
+  width: 90%;
+  height: 45vh;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+.edit__items textarea:focus {
+  outline: none;
+}
+.edit__image {
+  width: 40%;
+}
+.edit img {
+  width: 100%;
+}
+.edit__button {
+  background: var(--secondary-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 10rem;
+  color: var(--background-color);
+  display: inline;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.edit__password {
+  margin-bottom: 2rem;
+}
+#edit-username{
+  margin-bottom: 1.5rem;
+}

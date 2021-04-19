@@ -1,0 +1,60 @@
+.navbar {
+  background: var(--secondary-color);
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.navbar .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__items{
+  display: flex;
+}
+.navbar__items > div {
+  padding: 0 1rem;
+}
+.navbar__items > div:hover{
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar--open{
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.navbar i {
+  color: var(--background-color);
+  padding-right: 0.3rem;
+}
+.navbar__search{
+  height: auto !important;
+  background: var(--background-color) !important;
+  padding: 0.5rem 1rem
+}
+.navbar__search i {
+  cursor: pointer;
+  color: var(--main-color);
+}
+.navbar__search input{
+  background: none;
+  border: none;
+  border-right: 1px solid var(--main-color);
+  margin-right: 1rem;
+  width: 15rem;
+  color: var(--main-color);
+}
+.navbar__search input:focus{
+  outline: none;
+}
